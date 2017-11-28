@@ -1,0 +1,21 @@
+.category > ul {
+  padding: 10px 10px 30px;
+}
+.category > ul > li .title {
+  height: 40px;
+  width: 100%;
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  line-height: 40px;
+  padding-left: 30px;
+}
+.category > ul > li .list > ul > li > a {
+  display: block;
+  width: 25%;
+  height: 30px;
+  border: 1px solid #ccc;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+}

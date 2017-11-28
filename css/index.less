@@ -1,0 +1,115 @@
+@import "px2rem.less";
+
+//导航栏
+nav{
+  padding-top: 10px;
+  ul{
+    overflow: hidden;
+    transition:all 1s;
+    li{
+      width: 25%;
+      float: left;
+      a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        img{
+          width: 50%;
+          margin:0 25%;
+        }
+        p{
+          font-size: 12*@base;
+          text-align: center;
+          color: #666;
+          margin: 10*@base 0;
+        }
+      }
+    }
+  }
+}
+
+//推荐区
+.recommend{
+  .recom_title{
+    background-color: #ff841d;
+    p{
+      height: 40*@base;
+      line-height: 40*@base;
+      padding-left: 10*@base;
+      font-size: 20*@base;
+      color: #fff;
+    }
+    a{
+      display: block;
+      width: 30*@base;
+      height: 30*@base;
+      margin: 5*@base;
+    }
+  }
+  .item{
+    border-bottom: 1px solid #ccc;
+    a{
+      width: 100%;
+      display: block;
+      padding: 20px 10px;
+      .img_box{
+        width: 160px;
+      }
+      .message_box{
+        overflow: hidden;
+        position: relative;
+        padding-left: 20px;
+        p{
+          width: 100%;
+          font-size: 12px;
+          color: #999;
+        }
+        p:first-child{
+          font-size: 16px;
+          height: 100px;
+          span{
+            color: #ff841d;
+          }
+        }
+      }
+    }
+  }
+}
+
+//更多信息
+.s_more{
+  padding: 10px 10px 20px;
+  background-color: #eee;
+  a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #666;
+    margin: 0;
+    background-color: #ccc;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+}
+
+//品牌排行
+.brand{
+  background-color: #ff841d;
+  p{
+    height: 40*@base;
+    line-height: 40*@base;
+    padding-left: 10*@base;
+    font-size: 20*@base;
+    color: #fff;
+  }
+  a{
+    display: block;
+    width: 30*@base;
+    height: 30*@base;
+    margin: 5*@base;
+  }
+}
+
+

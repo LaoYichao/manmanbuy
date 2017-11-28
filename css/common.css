@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.m-fl {
+  float: left;
+}
+.m-fr {
+  float: right;
+}
+img {
+  width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+header {
+  height: 1.33335rem;
+  background-color: #ff841d;
+  padding: 0.26667rem;
+}
+header .logo {
+  margin-top: 0.133335rem;
+  width: 5.06673rem;
+  height: 0.746676rem;
+}
+header a {
+  display: block;
+  width: 0.933345rem;
+  height: 0.933345rem;
+}
+.search {
+  padding: 0.26667rem;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.search input {
+  width: 100%;
+  height: 0.666675rem;
+  border-radius: 0.400005rem;
+  background-color: #eee;
+  border: none;
+  padding-left: 0.400005rem;
+}
+.search button {
+  width: 15%;
+  position: absolute;
+  height: 0.666675rem;
+  border-radius: 0.400005rem;
+  top: 0.26667rem;
+  right: 0.26667rem;
+  border: none;
+  background-color: #ff841d;
+  color: #fff;
+}
+footer .f_button {
+  border-bottom: 1px solid #ccc;
+}
+footer .f_button a {
+  display: block;
+  width: 33.33%;
+  height: 40px;
+  background-color: #eee;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+}
+footer .f_button a span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+footer .f_button a.login {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+footer .f_message {
+  padding: 15px 0;
+  background-color: #eee;
+}
+footer .f_message p {
+  text-align: center;
+}
+footer .f_message p a {
+  color: red;
+}

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.m-fl {
+  float: left;
+}
+
+.m-fr {
+  float: right;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@import "px2rem.less";
+//顶部
+header {
+  height: 50*@base;
+  background-color: #ff841d;
+  padding: 10*@base;
+  .logo {
+    margin-top: 5*@base;
+    width: 190*@base;
+    height: 28*@base;
+  }
+  a {
+    display: block;
+    width: 35*@base;
+    height: 35*@base;
+  }
+}
+
+//搜索区
+.search {
+  padding: 10*@base;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  input {
+    width: 100%;
+    height: 25*@base;
+    border-radius: 15*@base;
+    background-color: #eee;
+    border: none;
+    padding-left: 15*@base;
+  }
+  button {
+    width: 15%;
+    position: absolute;
+    height: 25*@base;
+    border-radius: 15*@base;
+    top: 10*@base;
+    right: 10*@base;
+    border: none;
+    background-color: #ff841d;
+    color: #fff;
+  }
+}
+//通用底部
+footer{
+  .f_button{
+    border-bottom:1px solid #ccc;
+    a{
+      display: block;
+      width: 33.33%;
+      height: 40px;
+      background-color: #eee;
+      float: left;
+      text-align: center;
+      line-height: 40px;
+      font-size: 14px;
+      span{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+      }
+    }
+    a.login{
+      border-left:1px solid #ccc;
+      border-right:1px solid #ccc;
+    }
+  }
+  .f_message{
+    padding: 15px 0;
+    background-color: #eee;
+    p{
+      text-align: center;
+      a{
+        color: red;
+      }
+    }
+
+  }
+}
