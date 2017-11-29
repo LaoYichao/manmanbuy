@@ -94,3 +94,53 @@ footer .f_message p {
 footer .f_message p a {
   color: red;
 }
+.crumbs {
+  height: 50px;
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  padding-left: 20px;
+}
+.crumbs a {
+  font-size: 16px;
+  line-height: 50px;
+}
+.crumbs span {
+  display: block;
+  width: 60px;
+  height: 30px;
+  color: #666;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin: 10px 15px 0 0;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+}
+.page {
+  margin: 20px 0;
+}
+.page li {
+  width: 33.3333%;
+  float: left;
+}
+.page li a {
+  display: inline-block;
+  width: 60%;
+  margin: 0 20%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+}
+.page li select {
+  display: inline-block;
+  width: 60%;
+  margin: 0 20%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  font-size: 16px;
+}

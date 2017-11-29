@@ -12,6 +12,14 @@
      moneyctrl:"api/getmoneyctrl",
      categorytitle:"api/getcategorytitle",
      category:"api/getcategory",
+     categorybyid:"api/getcategorybyid",
+     productlist:"api/getproductlist",
+     product:"api/getproduct",
+     productcom:"api/getproductcom",
+     moneyctrl:"api/getmoneyctrl",
+     moneyctrlproduct:"api/getmoneyctrlproduct",
+     inlanddiscount:"api/getinlanddiscount",
+     discountproduct:"api/getdiscountproduct"
    }
   // 获取数据的 ajax 请求
   function getInfo( url,callback ) {

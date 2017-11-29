@@ -15,13 +15,12 @@ $(function () {
         if(!$this.hasClass("havedone")){
           var id = $(this).data("id");
           route.getData(url2,{titleid:id},function (data) {
+            console.log(data);
             $this.addClass("havedone").next().find("ul").html(template("tmp2",data));
           })
         }else{
           $this.next().find("ul").toggle()
         }
-        
-        
       })
       
       

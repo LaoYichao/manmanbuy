@@ -1,0 +1,94 @@
+.product_info {
+  padding: 0.26667rem;
+}
+.product_info .pro_title {
+  margin-bottom: 0.26667rem;
+}
+.product_info .pro_title h3 {
+  font-size: 0.426672rem;
+}
+.product_info .pro_title .price {
+  color: #ff841d;
+  font-size: 0.320004rem;
+}
+.product_info .pro_title p {
+  margin-top: 0.26667rem;
+  color: #666;
+  font-size: 0.320004rem;
+}
+.product_info .pro_title p .productTime {
+  margin: 0 0.26667rem;
+}
+.product_info .pro_title a {
+  color: blue;
+  font-size: 0.320004rem;
+}
+.product_info .pro_message {
+  font-size: 0.373338rem;
+  line-height: 0.53334rem;
+  color: #666;
+}
+.product_info .pro_message span {
+  font-size: 0.320004rem;
+}
+.product_info .gobuy a {
+  display: block;
+  width: 100%;
+  height: 1.06668rem;
+  background-color: orange;
+  text-align: center;
+  line-height: 1.06668rem;
+  font-size: 0.480006rem;
+  color: #fff;
+  border-radius: 0.133335rem;
+  margin-top: 0.400005rem;
+}
+.product_info .tit {
+  font-size: 0.426672rem;
+  margin: 0.26667rem 0;
+}
+.product_info .reply .form {
+  width: 100%;
+  position: relative;
+}
+.product_info .reply .form textarea {
+  width: 100%;
+  height: 60px;
+}
+.product_info .reply .form input {
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  width: 100px;
+  height: 30px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+}
+.product_info .list ul li {
+  padding: 0.26667rem 0;
+}
+.product_info .list ul li .userimg {
+  width: 0.80001rem;
+  float: left;
+}
+.product_info .list ul li .con {
+  padding-left: 0.26667rem;
+  overflow: hidden;
+  color: #666;
+}
+.product_info .list ul li .con .username {
+  float: left;
+  color: blue;
+  font-size: 0.320004rem;
+}
+.product_info .list ul li .con .time {
+  float: right;
+}
+.product_info .list ul li .con .content {
+  font-size: 0.373338rem;
+  margin-top: 0.133335rem;
+}
+.product_info .list ul li .con .content img {
+  width: 0.53334rem;
+}

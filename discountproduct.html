@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>慢慢买-首页</title>
+  <title>慢慢买-国内折扣</title>
   <script src="lib/flexible.debug.js"></script>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/category.css">
+  <link rel="stylesheet" href="css/discount.css">
 </head>
 <body>
 <!--顶部-->
@@ -19,17 +19,9 @@
     <img src="images/header_app.png" alt="">
   </a>
 </header>
-<!--搜索框-->
-<section class="search">
-  <input type="text" placeholder="请输入您想比价的商品">
-  <button>搜索</button>
-</section>
 
-
-<section class="category">
-  <ul>
-    <!--模板tmp1-->
-  </ul>
+<section class="pro_detil">
+  <!--模板tmp1-->
 </section>
 
 <!--通用底部-->
@@ -52,24 +44,23 @@
 </body>
 </html>
 
-<script type="text/html" id="tmp">
+<script type="text/html" id="tmp1">
   {{each result v i}}
-  <li>
-    <div data-id="{{v.titleId}}" class="title">{{v.title}}</div>
-    <div class="list">
-      <ul class="clearfix">
-      
-      </ul>
-    </div>
-  </li>
+  <h4>{{v.productName}}</h4>
+  <span class="price">{{v.productPrice}}</span>
+  <p><span>{{v.productFrom}}</span><span class="time">{{v.productTime}}</span><span>{{v.productTips}}</span></p>
+  <div class="img_box">{{@v.productImg}}</div>
+  <p>{{v.productInfo}}</p>
+  <div class="gobuy">
+    <a href="#">立即购买</a>
+  </div>
+  <img src="images/mmbweixin2.png" alt="" class="weixin">
+  {{@v.productComment}}
   {{/each}}
 </script>
-<script type="text/html" id="tmp2">
-  {{each result v i}}
-  <li><a href="productlist.html?categoryid={{v.categoryId}}&category={{v.category}}">{{v.category}}</a></li>
-  {{/each}}
-</script>
+
 <script src="lib/jquery.min.js"></script>
 <script src="lib/template.js"></script>
 <script src="js/common/route.js"></script>
-<script src="js/pages/category.js"></script>
+<script src="js/common/tool.js"></script>
+<script src="js/pages/discount.js"></script>

@@ -7,7 +7,7 @@
   <title>慢慢买-首页</title>
   <script src="lib/flexible.debug.js"></script>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/moneyctrl.css">
 </head>
 <body>
 <!--顶部-->
@@ -20,40 +20,23 @@
   </a>
 </header>
 
-<!--搜索框-->
-<section class="search">
-  <input type="text" placeholder="请输入您想比价的商品">
-  <button>搜索</button>
+<!--商品列表-->
+<section class="item">
+    <!--模板tmp1-->
 </section>
 
-<!--导航栏-->
-<nav>
+<!--分页部分-->
+<section class="page">
   <ul class="clearfix">
-    <div class="show"><!--模板tmp1--></div>
-    <div class="hide"><!--模板tmp2--></div>
-    
+    <li><a href="javascript:;" class="prev">上一页</a></li>
+    <li>
+      <select>
+        <!--模板tmp2-->
+      </select>
+    </li>
+    <li><a href="javascript:;" class="next">下一页</a></li>
   </ul>
-</nav>
-
-<!--推荐区-->
-<section class="recommend">
-  <div class="recom_title">
-    <p>超级折扣推荐 <a href="#" class="m-fr"><span><img src="images/more.png" alt=""></span></a></p>
-  </div>
-  <div class="items">
-  <!--模板tmp3-->
-  </div>
 </section>
-
-<!--更多优惠信息-->
-<section class="s_more">
-  <a href="#">更多优惠信息&gt;&gt;</a>
-</section>
-
-<!---->
-<div class="brand">
-  <p>品牌排行 <a href="#" class="m-fr"><span><img src="images/more.png" alt=""></span></a></p>
-</div>
 
 <!--通用底部-->
 <footer>
@@ -74,36 +57,10 @@
 </footer>
 </body>
 </html>
-
+<!--列表模板-->
 <script type="text/html" id="tmp1">
-    {{each result v i}}
-    {{ if i <=7}}
-    <li>
-      <a href="{{v.titlehref}}">
-        {{@v.img}}
-        <p>{{v.name}}</p>
-      </a>
-    </li>
-    {{ /if}}
-    {{/each}}
-</script>
-<script type="text/html" id="tmp2">
   {{each result v i}}
-  {{ if i >7}}
-  <li>
-    <a href="{{v.titlehref}}">
-      {{@v.img}}
-      <p>{{v.name}}</p>
-    </a>
-  </li>
-  {{ /if}}
-  {{/each}}
-</script>
-
-<script type="text/html" id="tmp3">
-{{each result v i }}
-<div class="item">
-  <a href="#" class="clearfix">
+  <a href="moneyctrlproduct.html?productid={{v.productId}}" class="clearfix">
     <div class="img_box m-fl">
       {{@v.productImg2}}
     </div>
@@ -112,11 +69,18 @@
       <p>{{v.productFrom}} | {{v.productTime}} <span class="m-fr">{{v.productComCount}}</span></p>
     </div>
   </a>
-</div>
   {{/each}}
+</script>
+
+<!--下拉菜单模板-->
+<script type="text/html" id="tmp2">
+  <% for(var i = 1;i<= page ;i++){%>
+  <option value="<%=i%>"><%=i%>/<%=page%></option>
+  <%}%>
 </script>
 
 <script src="lib/jquery.min.js"></script>
 <script src="lib/template.js"></script>
 <script src="js/common/route.js"></script>
-<script src="js/pages/index.js"></script>
+<script src="js/pages/moneyctrl.js"></script>
+

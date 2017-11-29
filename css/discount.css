@@ -1,0 +1,61 @@
+.pro_detil {
+  padding: 0.400005rem 0.26667rem;
+}
+.pro_detil h4 {
+  font-size: 0.480006rem;
+  color: #666;
+}
+.pro_detil .price {
+  font-size: 0.320004rem;
+  color: #ff841d;
+  margin-bottom: 0.26667rem;
+}
+.pro_detil p {
+  font-size: 0.373338rem;
+  color: #666;
+  margin: 0.133335rem 0;
+}
+.pro_detil p span {
+  font-size: 0.320004rem;
+  color: #999;
+}
+.pro_detil p .time {
+  margin: 0 0.133335rem;
+}
+.pro_detil .gobuy a {
+  display: block;
+  width: 100%;
+  height: 1.06668rem;
+  background-color: orange;
+  text-align: center;
+  line-height: 1.06668rem;
+  font-size: 0.480006rem;
+  color: #fff;
+  border-radius: 0.133335rem;
+  margin-top: 0.400005rem;
+}
+.pro_detil .weixin {
+  margin: 0.26667rem 0;
+}
+.pro_detil .tit {
+  font-size: 0.426672rem;
+  margin: 0.26667rem 0;
+}
+.pro_detil .reply .form {
+  width: 100%;
+  position: relative;
+}
+.pro_detil .reply .form textarea {
+  width: 100%;
+  height: 60px;
+}
+.pro_detil .reply .form input {
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  width: 100px;
+  height: 30px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+}

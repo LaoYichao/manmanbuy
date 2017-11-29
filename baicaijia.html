@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>慢慢买-首页</title>
+  <title>慢慢买-白菜价</title>
   <script src="lib/flexible.debug.js"></script>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/category.css">
+  <link rel="stylesheet" href="css/baicaijia.css">
 </head>
 <body>
 <!--顶部-->
@@ -19,16 +19,14 @@
     <img src="images/header_app.png" alt="">
   </a>
 </header>
-<!--搜索框-->
-<section class="search">
-  <input type="text" placeholder="请输入您想比价的商品">
-  <button>搜索</button>
-</section>
 
-
-<section class="category">
+<section class="navbar">
   <ul>
-    <!--模板tmp1-->
+    <li><a href="#">1</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">1</a></li>
   </ul>
 </section>
 
@@ -52,24 +50,8 @@
 </body>
 </html>
 
-<script type="text/html" id="tmp">
-  {{each result v i}}
-  <li>
-    <div data-id="{{v.titleId}}" class="title">{{v.title}}</div>
-    <div class="list">
-      <ul class="clearfix">
-      
-      </ul>
-    </div>
-  </li>
-  {{/each}}
-</script>
-<script type="text/html" id="tmp2">
-  {{each result v i}}
-  <li><a href="productlist.html?categoryid={{v.categoryId}}&category={{v.category}}">{{v.category}}</a></li>
-  {{/each}}
-</script>
 <script src="lib/jquery.min.js"></script>
 <script src="lib/template.js"></script>
 <script src="js/common/route.js"></script>
-<script src="js/pages/category.js"></script>
+<script src="js/common/tool.js"></script>
+<script src="js/pages/baicaijia.js"></script>

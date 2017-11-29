@@ -1,0 +1,109 @@
+@import "px2rem";
+//产品信息
+.product_info{
+  padding: 10*@base;
+  .pro_title{
+    margin-bottom: 10*@base;
+    h3{
+      font-size: 16*@base;
+    }
+    .price{
+      color: #ff841d;
+      font-size: 12*@base;
+    }
+    p{
+      margin-top: 10*@base;
+      color: #666;
+      font-size: 12*@base;
+      .productTime{
+        margin: 0 10*@base;
+      }
+    }
+    a{
+      color: blue;
+      font-size: 12*@base;
+    }
+  }
+
+  .pro_message{
+    font-size: 14*@base;
+    line-height: 20*@base;
+    color: #666;
+    span{
+      font-size: 12*@base;
+    }
+  }
+  .gobuy{
+    a{
+      display: block;
+      width: 100%;
+      height: 40*@base;
+      background-color: orange;
+      text-align: center;
+      line-height: 40*@base;
+      font-size: 18*@base;
+      color: #fff;
+      border-radius: 5*@base;
+      margin-top: 15*@base;
+    }
+  }
+  //评论部分
+  .tit{
+    font-size: 16*@base;
+    margin: 10*@base 0;
+  }
+  .reply{
+    .form{
+      width: 100%;
+      position: relative;
+      textarea{
+        width: 100%;
+        height: 60px;
+      }
+      input{
+        position: absolute;
+        bottom: 3px;
+        right: 0;
+        width: 100px;
+        height: 30px;
+        background-color: orange;
+        border:none;
+        border-radius: 5px;
+      }
+    }
+
+  }
+  .list{
+    ul{
+      li{
+        padding: 10*@base 0;
+        .userimg{
+          width: 30*@base;
+          float: left;
+        }
+        .con{
+          padding-left: 10*@base;
+          overflow: hidden;
+          color: #666;
+          .username{
+            float: left;
+            color: blue;
+            font-size: 12*@base;
+          }
+          .time{
+            float: right;
+          }
+          .content{
+            font-size: 14*@base;
+            margin-top: 5*@base;
+            img{
+              width: 20*@base;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

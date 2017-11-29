@@ -7,7 +7,7 @@
   <title>慢慢买-首页</title>
   <script src="lib/flexible.debug.js"></script>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/category.css">
+  <link rel="stylesheet" href="css/productlist.css">
 </head>
 <body>
 <!--顶部-->
@@ -19,16 +19,36 @@
     <img src="images/header_app.png" alt="">
   </a>
 </header>
+
 <!--搜索框-->
 <section class="search">
   <input type="text" placeholder="请输入您想比价的商品">
   <button>搜索</button>
 </section>
 
+<!--面包屑部分-->
+<section class="crumbs">
+  <a href="index.html">首页 &gt;</a>
+  <a href="category.html">全部分类 &gt;</a>
+  <a href="#" class="categoryname"></a>
+  <span class="m-fr">筛选</span>
+</section>
 
-<section class="category">
-  <ul>
-    <!--模板tmp1-->
+<!--商品列表部分-->
+<section class="items">
+<!--模板tmp-->
+</section>
+
+<!--分页部分-->
+<section class="page">
+  <ul class="clearfix">
+    <li><a href="javascript:;" class="prev">上一页</a></li>
+    <li>
+      <select>
+        <!--模板tmp2-->
+      </select>
+    </li>
+    <li><a href="javascript:;" class="next">下一页</a></li>
   </ul>
 </section>
 
@@ -51,25 +71,28 @@
 </footer>
 </body>
 </html>
-
+<!--商品列表模板-->
 <script type="text/html" id="tmp">
   {{each result v i}}
-  <li>
-    <div data-id="{{v.titleId}}" class="title">{{v.title}}</div>
-    <div class="list">
-      <ul class="clearfix">
-      
-      </ul>
+  <a href="product.html?productid={{v.productId}}&categoryid={{v.categoryId}}&brandName={{v.brandName}}" class="clearfix">
+    <div class="img_box m-fl">
+      {{@v.productImg}}
     </div>
-  </li>
+    <div class="message_box ">
+      <p>{{v.productName}} <span>{{v.productPrice}}</span></p>
+      <p>{{v.brandName}} | {{v.productQuote}} <span class="m-fr">{{v.productCom}}</span></p>
+    </div>
+  </a>
   {{/each}}
 </script>
+<!--下拉菜单模板-->
 <script type="text/html" id="tmp2">
-  {{each result v i}}
-  <li><a href="productlist.html?categoryid={{v.categoryId}}&category={{v.category}}">{{v.category}}</a></li>
-  {{/each}}
+  <% for(var i = 1;i<= page ;i++){%>
+  <option value="<%=i%>"><%=i%>/<%=page%></option>
+ <%}%>
 </script>
 <script src="lib/jquery.min.js"></script>
 <script src="lib/template.js"></script>
 <script src="js/common/route.js"></script>
-<script src="js/pages/category.js"></script>
+<script src="js/pages/productlist.js"></script>
+<script src="js/common/tool.js"></script>

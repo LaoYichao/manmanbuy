@@ -7,7 +7,7 @@
   <title>慢慢买-首页</title>
   <script src="lib/flexible.debug.js"></script>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/category.css">
+  <link rel="stylesheet" href="css/moneyproduct.css">
 </head>
 <body>
 <!--顶部-->
@@ -19,18 +19,13 @@
     <img src="images/header_app.png" alt="">
   </a>
 </header>
-<!--搜索框-->
-<section class="search">
-  <input type="text" placeholder="请输入您想比价的商品">
-  <button>搜索</button>
+
+<section class="product_info">
+  <!--模板tmp-->
 </section>
 
 
-<section class="category">
-  <ul>
-    <!--模板tmp1-->
-  </ul>
-</section>
+
 
 <!--通用底部-->
 <footer>
@@ -51,25 +46,35 @@
 </footer>
 </body>
 </html>
-
 <script type="text/html" id="tmp">
   {{each result v i}}
-  <li>
-    <div data-id="{{v.titleId}}" class="title">{{v.title}}</div>
-    <div class="list">
-      <ul class="clearfix">
-      
-      </ul>
-    </div>
-  </li>
+  <div class="pro_title">
+    <h3>{{v.productName}}</h3>
+    <span class="price">{{v.productPinkage}}</span>
+    <p>
+      <span> {{v.productFrom}} </span>
+      <span class="productTime"> {{v.productTime}} </span>
+      <span> {{v.productTips}}</span>
+    </p>
+    <a href="#">{{v.productComCount}}</a>
+  </div>
+  <div class="pro_message clearfix">
+    <p>{{v.productInfo2}}</p>
+    <span class="m-fr">{{v.productName}}</span>
+  </div>
+  <div class="gobuy">
+    <a href="#">立即购买</a>
+  </div>
+  <div class="weixin">
+    <img src="images/mmbweixin2.png" alt="">
+  </div>
+  {{@v.productComment}}
   {{/each}}
 </script>
-<script type="text/html" id="tmp2">
-  {{each result v i}}
-  <li><a href="productlist.html?categoryid={{v.categoryId}}&category={{v.category}}">{{v.category}}</a></li>
-  {{/each}}
-</script>
+
+
 <script src="lib/jquery.min.js"></script>
 <script src="lib/template.js"></script>
 <script src="js/common/route.js"></script>
-<script src="js/pages/category.js"></script>
+<script src="js/common/tool.js"></script>
+<script src="js/pages/moneyproduct.js"></script>
