@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>慢慢买-首页</title>
+  <title>慢慢买-优惠券</title>
   <script src="lib/flexible.debug.js"></script>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/moneyctrl.css">
+  <link rel="stylesheet" href="css/gsproduct.css">
 </head>
 <body>
 <!--顶部-->
@@ -20,24 +20,28 @@
   </a>
 </header>
 
-<!--商品列表-->
-<section class="item">
+<!--title-->
+<section class="title clearfix">
+  <a href="#" id="shop"><span></span> ▲</a>
+  <a href="#" id="area"><span></span> ▲</a>
+  <a href="#" id="allprice"><span>全部价格</span> ▲</a>
+  <ul class="shop">
     <!--模板tmp1-->
-</section>
-
-<!--分页部分-->
-<section class="page">
-  <ul class="clearfix">
-    <li><a href="javascript:;" class="prev">上一页</a></li>
-    <li>
-      <select>
-        <!--模板tmp2-->
-      </select>
-    </li>
-    <li><a href="javascript:;" class="next">下一页</a></li>
+  </ul>
+  <ul class="area">
+    <!--模板tmp2-->
+  </ul>
+  <ul class="allprice">
+    <li class="active">全部价格</li>
   </ul>
 </section>
 
+<!--商品区-->
+<section class="product">
+  <ul class="clearfix">
+    <!--模板tmp3-->
+  </ul>
+</section>
 <!--通用底部-->
 <footer>
   <div class="f_button clearfix">
@@ -57,30 +61,33 @@
 </footer>
 </body>
 </html>
-<!--列表模板-->
+<!--渲染店铺-->
 <script type="text/html" id="tmp1">
   {{each result v i}}
-  <a href="moneyctrlproduct.html?productid={{v.productId}}" class="clearfix">
-    <div class="img_box m-fl">
-      {{@v.productImg2}}
-    </div>
-    <div class="message_box ">
-      <p>{{v.productName}} <span>{{v.productPinkage}}</span></p>
-      <p>{{v.productFrom}} | {{v.productTime}} <span class="m-fr">{{v.productComCount}}</span></p>
-    </div>
-  </a>
+  <li data-id="{{v.shopId}}">{{v.shopName}}</li>
   {{/each}}
 </script>
-
-<!--下拉菜单模板-->
+<!--渲染地区-->
 <script type="text/html" id="tmp2">
-  <% for(var i = 1;i<= page ;i++){%>
-  <option value="<%=i%>"><%=i%>/<%=page%></option>
-  <%}%>
+  {{each result v i}}
+  <li data-id="{{v.areaId}}">{{v.areaName}}</li>
+  {{/each}}
+</script>
+<!--渲染商品-->
+<script type="text/html" id="tmp3">
+{{each result v i}}
+<li>
+  <a href="#">
+    <img src="{{v.productImg}}" alt="">
+    <p>{{v.productName}}</p>
+    <div><span>{{v.productPrice}}</span> <p class="m-fr">去凑单</p></div>
+  </a>
+</li>
+  {{/each}}
 </script>
 
 <script src="lib/jquery.min.js"></script>
 <script src="lib/template.js"></script>
 <script src="js/common/route.js"></script>
-<script src="js/pages/moneyctrl.js"></script>
-
+<script src="js/common/tool.js"></script>
+<script src="js/pages/gsproduct.js"></script>

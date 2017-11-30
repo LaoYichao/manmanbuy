@@ -7,7 +7,7 @@
   <title>慢慢买-首页</title>
   <script src="lib/flexible.debug.js"></script>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/productlist.css">
+  <link rel="stylesheet" href="css/brandtitle.css">
 </head>
 <body>
 <!--顶部-->
@@ -19,7 +19,6 @@
     <img src="images/header_app.png" alt="">
   </a>
 </header>
-
 <!--搜索框-->
 <section class="search">
   <input type="text" placeholder="请输入您想比价的商品">
@@ -29,26 +28,17 @@
 <!--面包屑部分-->
 <section class="crumbs">
   <a href="index.html">首页 &gt;</a>
-  <a href="category.html">全部分类 &gt;</a>
+  <a href="brandTitle.html">全部分类 &gt;</a>
   <a href="#" class="categoryname"></a>
   <span class="m-fr">筛选</span>
 </section>
 
-<!--商品列表部分-->
-<section class="items">
-<!--模板tmp-->
-</section>
 
-<!--分页部分-->
-<section class="page">
-  <ul class="clearfix">
-    <li><a href="javascript:;" class="prev">上一页</a></li>
-    <li>
-      <select>
-        <!--模板tmp2-->
-      </select>
-    </li>
-    <li><a href="javascript:;" class="next">下一页</a></li>
+<!--品牌部分-->
+<section class="brand">
+  <div>热门品牌排行</div>
+  <ul>
+    <!--模板tmp-->
   </ul>
 </section>
 
@@ -71,28 +61,17 @@
 </footer>
 </body>
 </html>
-<!--商品列表模板-->
 <script type="text/html" id="tmp">
-  {{each result v i}}
-  <a href="product.html?productid={{v.productId}}&categoryid={{v.categoryId}}&brandName={{v.brandName}}" class="clearfix">
-    <div class="img_box m-fl">
-      {{@v.productImg}}
-    </div>
-    <div class="message_box ">
-      <p>{{v.productName}} <span>{{v.productPrice}}</span></p>
-      <p>{{v.brandName}} | {{v.productQuote}} <span class="m-fr">{{v.productCom}}</span></p>
-    </div>
+{{each result v i}}
+<li>
+  <a href="brand.html?brandtitleid={{v.brandTitleId}}">
+    <span>{{v.brandTitle}}</span>
+    <span class="m-fr">&gt;</span>
   </a>
+</li>
   {{/each}}
-</script>
-<!--下拉菜单模板-->
-<script type="text/html" id="tmp2">
-  <% for(var i = 1;i<= page ;i++){%>
-  <option value="<%=i%>"><%=i%>/<%=page%></option>
- <%}%>
 </script>
 <script src="lib/jquery.min.js"></script>
 <script src="lib/template.js"></script>
 <script src="js/common/route.js"></script>
-<script src="js/pages/productlist.js"></script>
-<script src="js/common/tool.js"></script>
+<script src="js/pages/brandtitle.js"></script>

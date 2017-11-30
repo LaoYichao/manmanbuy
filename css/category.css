@@ -1,22 +1,22 @@
 .category > ul {
-  padding: 10px 10px 30px;
+  padding: 0.26667rem 0.26667rem 0.80001rem;
 }
 .category > ul > li .title {
-  height: 40px;
+  height: 1.06668rem;
   width: 100%;
   background-color: #eee;
   border-bottom: 1px solid #ccc;
-  font-size: 20px;
-  line-height: 40px;
-  padding-left: 30px;
+  font-size: 0.53334rem;
+  line-height: 1.06668rem;
+  padding-left: 0.80001rem;
 }
 .category > ul > li .list > ul > li > a {
   display: block;
   width: 25%;
-  height: 50px;
+  height: 1.33335rem;
   border: 1px solid #ccc;
   float: left;
   text-align: center;
-  line-height: 50px;
-  font-size: 16px;
+  line-height: 1.33335rem;
+  font-size: 0.320004rem;
 }

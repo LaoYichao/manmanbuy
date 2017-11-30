@@ -19,7 +19,18 @@
      moneyctrl:"api/getmoneyctrl",
      moneyctrlproduct:"api/getmoneyctrlproduct",
      inlanddiscount:"api/getinlanddiscount",
-     discountproduct:"api/getdiscountproduct"
+     discountproduct:"api/getdiscountproduct",
+     baicaijiatitle:"api/getbaicaijiatitle",
+     baicaijiaproduct:"api/getbaicaijiaproduct",
+     coupon:"api/getcoupon",
+     couponproduct:"api/getcouponproduct",
+     gsshop:"api/getgsshop",
+     gsshoparea:"api/getgsshoparea",
+     gsproduct:"api/getgsproduct",
+     gsproduct:"api/getgsproduct",
+     sitenav:"api/getsitenav",
+     brandtitle:"api/getbrandtitle",
+     brand:"api/getbrand",
    }
   // 获取数据的 ajax 请求
   function getInfo( url,callback ) {

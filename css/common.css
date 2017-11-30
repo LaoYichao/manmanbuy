@@ -33,6 +33,11 @@ header .logo {
   width: 5.06673rem;
   height: 0.746676rem;
 }
+header .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 header a {
   display: block;
   width: 0.933345rem;

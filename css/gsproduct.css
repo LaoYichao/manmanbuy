@@ -1,0 +1,64 @@
+.title {
+  border-bottom: 1px solid #ccc;
+  height: 1.06668rem;
+  position: relative;
+}
+.title a {
+  display: inline-block;
+  width: 30%;
+  height: 1.06668rem;
+  text-align: center;
+  line-height: 1.06668rem;
+  font-size: 0.426672rem;
+}
+.title ul {
+  width: 100%;
+  position: absolute;
+  top: 1.06668rem;
+  left: 0;
+  display: none;
+}
+.title ul li {
+  width: 100%;
+  height: 1.06668rem;
+  line-height: 1.06668rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.373338rem;
+  padding: 0 0.26667rem;
+  background-color: #fff;
+}
+.title ul .active {
+  color: #ff841d;
+}
+.product {
+  margin-bottom: 0.53334rem;
+  background-color: #eee;
+}
+.product li {
+  width: 45%;
+  margin: 2%;
+  float: left;
+}
+.product li p {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.320004rem;
+}
+.product li div {
+  background-color: #fff;
+  height: 0.80001rem;
+  line-height: 0.80001rem;
+}
+.product li div span {
+  font-size: 0.53334rem;
+  color: #ff841d;
+}
+.product li div p {
+  display: inline-block;
+  height: 0.80001rem;
+  width: 1.60002rem;
+  background-color: #ff841d;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.133335rem;
+}

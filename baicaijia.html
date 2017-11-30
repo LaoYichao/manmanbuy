@@ -13,23 +13,28 @@
 <!--顶部-->
 <header>
   <div class="logo m-fl">
-    <img src="images/header_logo.png" alt="">
+    <a href="index.html"><img src="images/header_logo.png" alt=""></a>
   </div>
   <a href="#" class="m-fr">
     <img src="images/header_app.png" alt="">
   </a>
 </header>
 
-<section class="navbar">
-  <ul>
-    <li><a href="#">1</a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">1</a></li>
-  </ul>
+<!--顶部分类-->
+<section class="title">
+  <div class="warp">
+    <ul>
+      <!--模板tmp1-->
+    </ul>
+  </div>
 </section>
 
+<!--商品区-->
+<section class="products">
+  <!--模板tmp2-->
+</section>
+
+<a href="#" id="gotop">↑</a>
 <!--通用底部-->
 <footer>
   <div class="f_button clearfix">
@@ -49,6 +54,32 @@
 </footer>
 </body>
 </html>
+
+<!--title模板-->
+<script type="text/html" id="tmp">
+  {{each result v i}}
+  <li data-id="{{v.titleId}}"><a href="#">{{v.title}}</a></li>
+  {{/each}}
+</script>
+
+<!--商品模板-->
+<script type="text/html" id="tmp2">
+  {{each result v i}}
+  <div class="item">
+    <div class="img_box">{{@v.productImg}}</div>
+    <div class="message_box">
+      <p class="productName">{{@v.productName}}</p>
+      <p class="productPrice">{{@v.productPrice}}</p>
+      {{@v.productCouponRemain}}
+      <div class="link">
+        <div class="productCoupon m-fl">{{@v.productCoupon}}</div>
+        <div class="productHref m-fr">{{@v.productHref}}</div>
+      </div>
+      
+    </div>
+  </div>
+  {{/each}}
+</script>
 
 <script src="lib/jquery.min.js"></script>
 <script src="lib/template.js"></script>

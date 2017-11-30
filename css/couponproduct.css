@@ -1,0 +1,42 @@
+h4 {
+  text-align: center;
+  font-size: 0.320004rem;
+  color: #999;
+  border-top: 5px solid #ccc;
+  margin-bottom: 0.400005rem;
+}
+.foods li {
+  position: relative;
+  padding: 0.26667rem;
+  border-bottom: 1px solid #ccc;
+}
+.foods li .info .img_box {
+  width: 2.6667rem;
+  float: left;
+}
+.foods li .info .message {
+  overflow: hidden;
+  padding: 0 0.400005rem;
+}
+.foods li .info .message p {
+  font-size: 0.373338rem;
+  color: #333;
+}
+.foods li .info .message span {
+  font-size: 0.320004rem;
+}
+.foods li .time {
+  text-align: center;
+  font-size: 0.320004rem;
+  color: #ff841d;
+}
+.foods li .row {
+  position: absolute;
+  right: 0rem;
+  top: 45%;
+  width: 0.746676rem;
+  height: 0.53334rem;
+  font-size: 0.80001rem;
+  line-height: 0;
+  color: #ccc;
+}

@@ -7,7 +7,7 @@ $(function () {
   var url3 = urls.productcom//获取商品评论
   var productid = getKey("productid");//商品的id
   var categoryid = getKey("categoryid");//商品列表的id,用来面包屑部分返回上级
-  var brandName = getKey("brandName")
+  var brandName = getKey("brandName");
   //渲染面包屑
   route.getData(url1, {categoryid : categoryid}, function (data) {
     $(".crumbs").html(template("tmp1",data));

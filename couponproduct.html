@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>慢慢买-首页</title>
+  <title>慢慢买-优惠券</title>
   <script src="lib/flexible.debug.js"></script>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/moneyctrl.css">
+  <link rel="stylesheet" href="css/couponproduct.css">
 </head>
 <body>
 <!--顶部-->
@@ -20,21 +20,10 @@
   </a>
 </header>
 
-<!--商品列表-->
-<section class="item">
-    <!--模板tmp1-->
-</section>
-
-<!--分页部分-->
-<section class="page">
-  <ul class="clearfix">
-    <li><a href="javascript:;" class="prev">上一页</a></li>
-    <li>
-      <select>
-        <!--模板tmp2-->
-      </select>
-    </li>
-    <li><a href="javascript:;" class="next">下一页</a></li>
+<h4>--点餐前请出示手机中的优惠券，即可享受优惠--</h4>
+<section class="foods">
+  <ul>
+    <!--模板tmp-->
   </ul>
 </section>
 
@@ -57,30 +46,24 @@
 </footer>
 </body>
 </html>
-<!--列表模板-->
-<script type="text/html" id="tmp1">
-  {{each result v i}}
-  <a href="moneyctrlproduct.html?productid={{v.productId}}" class="clearfix">
-    <div class="img_box m-fl">
-      {{@v.productImg2}}
+<script type="text/html" id="tmp">
+{{each result v i}}
+<li>
+  <div class="info clearfix">
+    <div class="img_box">{{@v.couponProductImg}}</div>
+    <div class="message">
+      <p>{{v.couponProductName}}</p>
+      <span>{{v.couponProductPrice}}</span>
     </div>
-    <div class="message_box ">
-      <p>{{v.productName}} <span>{{v.productPinkage}}</span></p>
-      <p>{{v.productFrom}} | {{v.productTime}} <span class="m-fr">{{v.productComCount}}</span></p>
-    </div>
-  </a>
+  </div>
+  <p class="time">{{v.couponProductTime}}</p>
+  <span class="row">&gt;</span>
+</li>
   {{/each}}
-</script>
-
-<!--下拉菜单模板-->
-<script type="text/html" id="tmp2">
-  <% for(var i = 1;i<= page ;i++){%>
-  <option value="<%=i%>"><%=i%>/<%=page%></option>
-  <%}%>
 </script>
 
 <script src="lib/jquery.min.js"></script>
 <script src="lib/template.js"></script>
 <script src="js/common/route.js"></script>
-<script src="js/pages/moneyctrl.js"></script>
-
+<script src="js/common/tool.js"></script>
+<script src="js/pages/couponproduct.js"></script>

@@ -10,7 +10,7 @@ $(function () {
     $("nav .show").html(html1);
     $("nav .hide").html(html2).hide();
     $(".show li").eq(7).on("click",function () {
-      $("nav .hide").toggle()
+      $("nav .hide").slideToggle(500);
     })
     
   });

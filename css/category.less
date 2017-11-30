@@ -1,15 +1,16 @@
+@import "px2rem";
 .category{
   >ul{
-    padding: 10px 10px 30px;
+    padding: 10*@base 10*@base 30*@base;
     >li{
       .title{
-        height: 40px;
+        height: 40*@base;
         width: 100%;
         background-color: #eee;
         border-bottom: 1px solid #ccc;
-        font-size: 20px;
-        line-height: 40px;
-        padding-left: 30px;
+        font-size: 20*@base;
+        line-height: 40*@base;
+        padding-left: 30*@base;
       }
       .list{
         >ul{
@@ -17,12 +18,12 @@
             >a{
               display: block;
               width: 25%;
-              height: 50px;
+              height: 50*@base;
               border: 1px solid #ccc;
               float: left;
               text-align: center;
-              line-height: 50px;
-              font-size: 16px;
+              line-height: 50*@base;
+              font-size: 12*@base;
             }
           }
         }

@@ -1,0 +1,18 @@
+.cou_title li {
+  width: 28%;
+  margin: 2%;
+  float: left;
+  border: 1px solid #ccc;
+}
+.cou_title li a {
+  display: block;
+}
+.cou_title li a .img_box {
+  width: 60%;
+  margin: 5px 20% ;
+}
+.cou_title li a p {
+  text-align: center;
+  color: #999;
+  margin-bottom: 5px;
+}
