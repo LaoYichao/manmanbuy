@@ -1,0 +1,203 @@
+.detil .title {
+  width: 80%;
+  height: 1.06668rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.480006rem;
+}
+.detil .d_img {
+  width: 50%;
+  margin: 0.53334rem auto;
+}
+.detil .d_tab > ul li {
+  float: left;
+  width: 33.33%;
+}
+.detil .d_tab > ul li a {
+  display: block;
+  height: 1.33335rem;
+  background-color: orange;
+  line-height: 1.33335rem;
+  text-align: center;
+  font-size: 0.53334rem;
+  color: #fff;
+}
+.detil .d_tab > ul li:nth-child(2) a {
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+}
+.comments .title {
+  height: 1.06668rem;
+  background-color: #fff;
+  text-align: center;
+  font-size: 0.426672rem;
+  line-height: 1.06668rem;
+  background-color: #ccc;
+}
+.comments .all_com {
+  padding: 0.26667rem;
+}
+.comments .all_com .list_com .userinfo {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.comments .all_com .list_com .userinfo li {
+  background-color: #eee;
+  width: 50%;
+  height: 0.80001rem;
+  float: left;
+  padding-top: 0.133335rem;
+}
+.comments .all_com .list_com .usercomment {
+  padding: 0.53334rem 0 0.80001rem;
+  font-size: 0.426672rem;
+  color: #999999;
+  line-height: 0.666675rem;
+}
+.comments .more_com {
+  border-top: 1px solid #ccc;
+  padding: 0.53334rem 0.26667rem 0.80001rem;
+}
+.comments .more_com a {
+  display: block;
+  width: 100%;
+  height: 0.80001rem;
+  background-color: #ccc;
+  border-radius: 0.26667rem;
+  text-align: center;
+  line-height: 0.80001rem;
+  font-size: 0.373338rem;
+}
+.main .title {
+  height: 1.06668rem;
+  background-color: #eee;
+  line-height: 1.06668rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-left: 0.26667rem;
+  font-size: 0.373338rem;
+  color: #874604;
+}
+.main .brand ul li {
+  border-bottom: 1px solid #eee;
+  padding: 0.26667rem;
+  position: relative;
+}
+.main .brand ul li a {
+  display: block;
+  height: 1.06668rem;
+}
+.main .brand ul li a .m-fl {
+  width: 0.53334rem;
+  height: 0.53334rem;
+  color: #fff;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 0.53334rem;
+  font-size: 0.426672rem;
+}
+.main .brand ul li a .message {
+  overflow: hidden;
+  padding-left: 0.26667rem;
+}
+.main .brand ul li a .message h4 {
+  font-size: 0.373338rem;
+  color: #000;
+  margin-bottom: 0.133335rem;
+}
+.main .brand ul li a .message p {
+  font-size: 0.320004rem;
+  color: #999;
+}
+.main .brand ul li a span {
+  position: absolute;
+  right: 0.133335rem;
+  top: 0.26667rem;
+  font-size: 0.640008rem;
+  color: #999;
+}
+.main .brand ul li a .first {
+  background-color: red;
+}
+.main .brand ul li a .second {
+  background-color: #ff841d;
+}
+.main .brand ul li a .third {
+  background-color: lawngreen;
+}
+.main .sales li {
+  padding-left: 0.26667rem;
+}
+.main .sales li a {
+  display: block;
+}
+.main .sales li a .img_box {
+  width: 2.6667rem;
+}
+.main .sales li a .message_box {
+  overflow: hidden;
+  padding: 0 0.26667rem;
+}
+.main .sales li a .message_box h4 {
+  margin-top: 0.133335rem;
+  font-size: 0.373338rem;
+  font-weight: 400;
+  color: #999;
+}
+.main .sales li a .message_box p {
+  color: #ff841d;
+  font-size: 0.480006rem;
+  margin: 0.133335rem 0;
+}
+.main .sales li a .message_box p .price {
+  color: red;
+}
+.main .sales li a .message_box div span {
+  font-size: 0.320004rem;
+  color: #ccc;
+  margin-right: 0.26667rem;
+}
+.main .comment {
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.main .comment .product .img_box {
+  width: 100px;
+}
+.main .comment .product .message_box {
+  overflow: hidden;
+  padding: 0 10px;
+}
+.main .comment .product .message_box h4 {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+}
+.main .comment .content {
+  padding: 10px;
+  background-color: #eee;
+  position: relative;
+  border-radius: 10px;
+}
+.main .comment .content .row {
+  position: absolute;
+  top: -19px;
+  left: 20px;
+  font-size: 20px;
+  color: #eee;
+}
+.main .comment .content .tit {
+  color: #666;
+}
+.main .comment .content .tit .wjx {
+  color: #ff841d;
+  font-size: 16px;
+}
+.main .comment .content P {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  margin-top: 5px;
+}

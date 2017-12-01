@@ -31,7 +31,10 @@
      sitenav:"api/getsitenav",
      brandtitle:"api/getbrandtitle",
      brand:"api/getbrand",
+     brandproductlist:"api/getbrandproductlist",
+     productcom:"api/getproductcom"
    }
+   
   // 获取数据的 ajax 请求
   function getInfo( url,callback ) {
     var url = route.baseUrl + url;
@@ -54,6 +57,7 @@
       }
     })
   };
+  
   window.route = route;
   window.urls = urls;
 } )( );

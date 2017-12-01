@@ -1,22 +1,96 @@
+.detil .title {
+  width: 80%;
+  height: 1.06668rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.480006rem;
+}
+.detil .d_img {
+  width: 50%;
+  margin: 0.53334rem auto;
+}
+.detil .d_tab > ul li {
+  float: left;
+  width: 33.33%;
+}
+.detil .d_tab > ul li a {
+  display: block;
+  height: 1.33335rem;
+  background-color: orange;
+  line-height: 1.33335rem;
+  text-align: center;
+  font-size: 0.53334rem;
+  color: #fff;
+}
+.detil .d_tab > ul li:nth-child(2) a {
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+}
+.comments .title {
+  height: 1.06668rem;
+  background-color: #fff;
+  text-align: center;
+  font-size: 0.426672rem;
+  line-height: 1.06668rem;
+  background-color: #ccc;
+}
+.comments .all_com {
+  padding: 0.26667rem;
+}
+.comments .all_com .list_com .userinfo {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.comments .all_com .list_com .userinfo li {
+  background-color: #eee;
+  width: 50%;
+  height: 0.80001rem;
+  float: left;
+  padding-top: 0.133335rem;
+}
+.comments .all_com .list_com .usercomment {
+  padding: 0.53334rem 0 0.80001rem;
+  font-size: 0.426672rem;
+  color: #999999;
+  line-height: 0.666675rem;
+}
+.comments .more_com {
+  border-top: 1px solid #ccc;
+  padding: 0.53334rem 0.26667rem 0.80001rem;
+}
+.comments .more_com a {
+  display: block;
+  width: 100%;
+  height: 0.80001rem;
+  background-color: #ccc;
+  border-radius: 0.26667rem;
+  text-align: center;
+  line-height: 0.80001rem;
+  font-size: 0.373338rem;
+}
 .brand {
-  margin-bottom: 20px;
+  margin-bottom: 0.53334rem;
 }
 .brand div {
   width: 90%;
   margin: 5%;
-  height: 40px;
+  height: 1.06668rem;
   border: 1px solid #ccc;
   background-color: #eee;
-  border-radius: 5px;
-  font-size: 16px;
-  padding-left: 15px;
-  line-height: 40px;
+  border-radius: 0.133335rem;
+  font-size: 0.426672rem;
+  padding-left: 0.400005rem;
+  line-height: 1.06668rem;
 }
 .brand ul li {
-  height: 40px;
+  height: 1.06668rem;
   background-color: #eee;
   border: 1px solid #ccc;
-  line-height: 40px;
-  padding: 0 10px;
-  font-size: 18px;
+  line-height: 1.06668rem;
+  padding: 0 0.26667rem;
+  font-size: 0.480006rem;
+}
+.brand ul li a {
+  display: block;
+  width: 100%;
 }

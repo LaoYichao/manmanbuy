@@ -1,0 +1,149 @@
+@import "product";
+.main{
+  .title{
+    height: 40*@base;
+    background-color: #eee;
+    line-height: 40*@base;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-left: 10*@base;
+    font-size: 14*@base;
+    color: #874604;
+  }
+
+  .brand{
+    ul{
+      li{
+        border-bottom: 1px solid #eee;
+        padding: 10*@base;
+        position: relative;
+        a{
+          display: block;
+          height: 40*@base;
+          .m-fl{
+            width: 20*@base;
+            height: 20*@base;
+            color: #fff;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 20*@base;
+            font-size: 16*@base;
+          }
+          .message{
+            overflow: hidden;
+            padding-left: 10*@base;
+            h4{
+              font-size: 14*@base;
+              color: #000;
+              margin-bottom: 5*@base;
+            }
+            p{
+              font-size: 12*@base;
+              color: #999;
+            }
+          }
+          span{
+            position: absolute;
+            right: 5*@base;
+            top:10*@base;
+            font-size: 24*@base;
+            color: #999;
+          }
+          .first{
+            background-color: red;
+          }
+          .second{
+            background-color: #ff841d;
+          }
+          .third{
+            background-color: lawngreen;
+          }
+        }
+      }
+    }
+  }
+
+  .sales{
+    li{
+      padding-left: 10*@base;
+      a{
+        display: block;
+        .img_box{
+          width: 100*@base;
+        }
+        .message_box{
+          overflow: hidden;
+          padding:0 10*@base;
+          h4{
+            margin-top: 5*@base;
+            font-size: 14*@base;
+            font-weight: 400;
+            color: #999;
+          }
+          p{
+            color: #ff841d;
+            font-size: 18*@base;
+            margin:  5*@base 0;
+            .price{
+              color: red;
+            }
+          }
+          div{
+            span{
+              font-size: 12*@base;
+              color: #ccc;
+              margin-right: 10*@base;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .comment{
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    padding:0 10px;
+    .product{
+      .img_box{
+        width: 100px;
+      }
+      .message_box{
+        overflow: hidden;
+        padding:0 10px;
+        h4{
+          margin-top: 5px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #999;
+        }
+      }
+    }
+    .content{
+      padding: 10px;
+      background-color: #eee;
+      position: relative;
+      border-radius: 10px;
+      .row{
+        position: absolute;
+        top:-19px;
+        left:20px;
+        font-size: 20px;
+        color: #eee;
+      }
+      .tit{
+        color: #666;
+        .wjx{
+          color: #ff841d;
+          font-size: 16px;
+        }
+      }
+      P{
+        font-size: 16px;
+        line-height: 24px;
+        color: #333;
+        margin-top: 5px;
+      }
+    }
+  }
+}

@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>慢慢买-首页</title>
+  <title>慢慢买-品牌大全</title>
+  <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
   <script src="lib/flexible.debug.js"></script>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/brand.css">
@@ -33,7 +34,32 @@
   <span class="m-fr">筛选</span>
 </section>
 
-section
+<section class="main">
+  
+  <!--品牌部分-->
+  <div class="brand">
+    <div class="title"><span></span>哪个牌子好</div>
+    <ul>
+      <!--模板tmp1-->
+    </ul>
+  </div>
+  
+  <!--销量部分-->
+  <div class="sales">
+    <div class="title"><span></span>产品销量排行</div>
+    <ul>
+      <!--模板tmp2-->
+    </ul>
+  </div>
+  
+  <!--评论部分-->
+  <div class="comment">
+    <div class="title"><span></span>最新评论</div>
+    <ul>
+      <!--模板tmp3-->
+    </ul>
+  </div>
+</section>
 
 
 <!--通用底部-->
@@ -55,7 +81,71 @@ section
 </footer>
 </body>
 </html>
+<!--品牌模板-->
+<script type="text/html" id="tmp1">
+  {{each result v i}}
+  <li data-id="{{v.categoryId}}" data-name="{{v.brandName}}">
+    <a href="javascript:;" class="clearfix">
+      <div class="m-fl">{{i}}</div>
+      <div class="message">
+        <h4>{{v.brandName}}</h4>
+        <p>{{v.brandInfo}}</p>
+      </div>
+      <span>&gt;</span>
+    </a>
+  </li>
+  {{/each}}
+</script>
 
+<!--销量模板-->
+<script type="text/html" id="tmp2">
+  {{each result v i}}
+  <li >
+    <a href="product.html?productid={{v.productId}}&categoryid={{v.categoryId}}&brandName={{v.brandName}}" class="clearfix">
+    <div class="img_box m-fl">{{@v.productImg}}</div>
+    <div class="message_box">
+      <h4>{{v.productName}}</h4>
+      <p><span class="price">{{v.productPrice}}</span><span class="m-fr">★★★★★</span></p>
+      <div><span>{{v.productQuote}} </span> <span> {{v.productCom}}</span></div>
+    </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+<!--评论模板-->
+<script type="text/html" id="tmp3">
+{{each result v i}}
+<li>
+  <div class="product"></div>
+  <div class="content">
+    <span class="row">▲</span>
+    <div class="tit">
+      <span>{{v.comName}}</span>
+      <span class="wjx">★★★★★</span>
+      <span class="m-fr">{{v.comTime}}</span>
+    </div>
+    <p>{{v.comContent}}</p>
+  </div>
+</li>
+  {{/each}}
+</script>
+
+<!--评论里面product模板-->
+<script type="text/html" id="tmp4">
+  {{each result v i}}
+  {{ if i==0 }}
+  <li >
+    <a href="product.html?productid={{v.productId}}&categoryid={{v.categoryId}}&brandName={{v.brandName}}" class="clearfix">
+      <div class="img_box m-fl">{{@v.productImg}}</div>
+      <div class="message_box">
+        <h4>{{v.productName}}</h4>
+      </div>
+    </a>
+  </li>
+  {{ /if }}
+  {{/each}}
+</script>
 <script src="lib/jquery.min.js"></script>
 <script src="lib/template.js"></script>
 <script src="js/common/route.js"></script>

@@ -72,14 +72,20 @@
           border: 1px solid #fc353a;
           background-color: pink;
           border-radius: 10*@base;
-          span{
+          position: relative;
+          overflow: hidden;
+          em{
             display: inline-block;
-            width: 75*@base;
+            background-color: #fc353a;
             height: 15*@base;
             border-radius: 10*@base;
-            background-color: #fc353a;
+            position: absolute;
+          }
+          span{
             padding-left: 40*@base;
             color: #fff;
+            //z-index: 2;
+            position: absolute;
           }
         }
         b{

@@ -1,24 +1,29 @@
+@import "product";
 .brand{
-  margin-bottom: 20px;
+  margin-bottom: 20*@base;
   div{
     width: 90%;
     margin: 5%;
-    height: 40px;
+    height: 40*@base;
     border: 1px solid #ccc;
     background-color: #eee;
-    border-radius: 5px;
-    font-size: 16px;
-    padding-left: 15px;
-    line-height: 40px;
+    border-radius: 5*@base;
+    font-size: 16*@base;
+    padding-left: 15*@base;
+    line-height: 40*@base;
   }
   ul{
     li{
-      height: 40px;
+      height: 40*@base;
       background-color: #eee;
       border: 1px solid #ccc;
-      line-height: 40px;
-      padding:0 10px;
-      font-size: 18px;
+      line-height: 40*@base;
+      padding:0 10*@base;
+      font-size: 18*@base;
+      a{
+        display: block;
+        width: 100%;
+      }
     }
   }
 }

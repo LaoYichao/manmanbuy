@@ -69,15 +69,20 @@
   border: 1px solid #fc353a;
   background-color: pink;
   border-radius: 0.26667rem;
+  position: relative;
+  overflow: hidden;
 }
-.products .item .message_box .bar i span {
+.products .item .message_box .bar i em {
   display: inline-block;
-  width: 2.000025rem;
+  background-color: #fc353a;
   height: 0.400005rem;
   border-radius: 0.26667rem;
-  background-color: #fc353a;
+  position: absolute;
+}
+.products .item .message_box .bar i span {
   padding-left: 1.06668rem;
   color: #fff;
+  position: absolute;
 }
 .products .item .message_box .bar b {
   margin-left: 0.133335rem;
